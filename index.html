@@ -3,132 +3,269 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Илья Шиятый — начинающий разработчик</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Илья Шиятый — IronShift Portfolio</title>
+    <link rel="stylesheet" href="ironshift-portfolio-v2.css">
 </head>
 <body>
-    <div class="particles"><span style="left: 5%; animation-delay: 0s;"></span>
-        <span style="left: 15%; animation-delay: 1s;"></span>
-        <span style="left: 25%; animation-delay: 2s;"></span>
-        <span style="left: 35%; animation-delay: 3s;"></span>
-        <span style="left: 45%; animation-delay: 1.5s;"></span>
-        <span style="left: 55%; animation-delay: 0.5s;"></span>
-        <span style="left: 65%; animation-delay: 2.5s;"></span>
-        <span style="left: 75%; animation-delay: 1s;"></span>
-        <span style="left: 85%; animation-delay: 0.2s;"></span>
-        <span style="left: 95%; animation-delay: 3.2s;"></span></div>
-    <header>
-        <h1>Илья Шиятый</h1>
-        <p>Студент ГПОАУ АО Амурского Педагогического Колледжа. Начинающий веб-разработчик и цифровой тварец.</p>
+    <header class="site-header">
+        <nav class="nav page-shell" aria-label="Основная навигация">
+            <a class="brand" href="#signal" aria-label="К началу страницы">
+                <span class="brand-mark" aria-hidden="true"></span>
+                <span>Kor Archive</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#systems">Навыки</a></li>
+                <li><a href="#process">Процесс</a></li>
+                <li><a href="#archive">Сертификаты</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#signal-contact">Контакты</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">О себе</a></li>
-            <li><a href="#skills">Навыки</a></li>
-            <li><a href="#portfolio">Портфолио</a></li>
-            <li><a href="#education">Образование</a></li>
-            <li><a href="#first-year-certificates">Сертификаты (1 курс)</a></li>
-            <li><a href="#second-year-certificates">Сертификаты (2 курс)</a></li>
-            <li><a href="#third-year-certificates">Сертификаты (3 курс)</a></li>
-            <li><a href="#gallery">Галерея</a></li>
-            <li><a href="#contacts">Контакты</a></li>
-        </ul>
-    </nav>
-
     <main>
-        <section id="about" data-aos="fade-up">
-            <h2>О себе</h2>
-            <img src="img/avatar2.jpg" alt="Моя фотография" />
-            <p>Меня зовут Илья. Я учусь на специалиста по информационным системам и программированию. Увлекаюсь веб-разработкой, Python, дизайном и созданием собственных цифровых проектов. Сейчас работаю над своими первыми идеями и учусь превращать их в реальные продукты.</p>
+        <section class="hero page-shell" id="signal">
+            <div class="hero-content">
+                <p class="eyebrow">Khorus-IV archive node / access granted</p>
+                <h1 class="hero-title">Илья <span>Шиятый</span></h1>
+                <p class="hero-copy">
+                    Студент специальности "Информационные системы и программирование" и начинающий веб-разработчик.
+                    Это учебное портфолио и личный архив в стиле Sci-fi: здесь собраны навыки, сертификаты,
+                    игровые концепты и планы проектов, которые будут развиваться в будущем.
+                </p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projects">Открыть проекты</a>
+                    <a class="button" href="#signal-contact">Связаться</a>
+                    <a class="button" href="#archive">Сертификаты</a>
+                </div>
+            </div>
+
+            <aside class="signal-card" aria-label="Профиль">
+                <img class="profile-photo" src="img/avatar2.jpg" width="220" height="220" alt="Фотография Ильи Шиятого">
+                <p class="signal-label">Operator profile</p>
+                <p class="signal-value">Web / Python / Game Concepts</p>
+                <dl class="profile-list">
+                    <div>
+                        <dt>Статус</dt>
+                        <dd>Студент ГПОАУ АО АПК</dd>
+                    </div>
+                    <div>
+                        <dt>Специальность</dt>
+                        <dd>ИСиП</dd>
+                    </div>
+                    <div>
+                        <dt>Фокус</dt>
+                        <dd>Сайты, боты, прототипы, лор</dd>
+                    </div>
+                </dl>
+            </aside>
         </section>
 
-        <section id="skills" data-aos="fade-up" data-aos-delay="100">
-            <h2>Навыки</h2>
-            <ul>
-                <li>HTML / CSS (вёрстка)</li>
-                <li>Основы Python (боты, логика, простые скрипты)</li>
-                <li>Adobe Photoshop (дизайн, баннеры)</li>
-                <li>Работа с Telegram-ботами</li>
-                <li>Планирование и прототипирование проектов</li>
-            </ul>
-        </section>
+        <section class="section page-shell" id="projects">
+            <div class="section-header">
+                <div>
+                    <p class="section-kicker">Project dossiers</p>
+                    <h2 class="section-title">Проекты и концепты</h2>
+                </div>
+                <p class="section-note">Сейчас это честный архив концептов: идеи, роли, инструменты и планы без выдуманных демо.</p>
+            </div>
 
-        <section id="portfolio" data-aos="fade-up" data-aos-delay="200">
-            <h2>Портфолио</h2>
-            <p>Сейчас я работаю над собственными идеями. Вот некоторые из них:</p>
-            <ul>
-                <li><strong>IronShift</strong> — это научно-фантастическая экшен-RPG, которая будет разрабатываться на Unreal Engine 5 и будет посвящена пилотированию человекоподобных мехов на планете Khorus-IV. В проекте планируется система параметров C.O.R.E.T.E.K, возможность ручной расшифровки древнего механического языка и глубокая интеграция таинственного вещества Кор, лежащего в основе технологий мира. Игра будет сочетать динамичные сражения, расширяемую кастомизацию мехов, исследование окружения и атмосферный лор</li>
-                <li><strong>IRON HORIZON: SCAVENGER PROTOCOL</strong> - это будущая концепция игры, основанная на идее выживания на планете-свалке Аэгис-7, где игроки становятся мусорщиками, восстанавливающими древних боевых мехов. Игра сочетает двухуровневый геймплей: уязвимого пилота и мощного меха, управляемого благодаря "Живому Ядру" — ИИ-компаньону, сохраняющему личность и прогресс игрока.
+            <div class="grid project-grid">
+                <article class="project-card">
+                    <span class="card-id">DOSSIER-01 / CONCEPT</span>
+                    <h3 class="card-title">IronShift</h3>
+                    <p class="project-status">Статус: концепт и лор-документация</p>
+                    <p class="card-copy">
+                        Sci-fi action RPG о пилотировании человекоподобных мехов на планете Khorus-IV.
+                        В проекте прорабатываются C.O.R.E.T.E.K, лор, кастомизация мехов и идея расшифровки древнего механического языка.
+                    </p>
+                    <ul class="tag-list">
+                        <li class="tag">Unreal Engine 5</li>
+                        <li class="tag">Worldbuilding</li>
+                        <li class="tag">Game Design</li>
+                    </ul>
+                </article>
 
-Основная идея проекта — создать честную survival-экосистему без P2W, с упором на кооперацию, строительством базы, сборкой мехов по чертежам и исследованиями опасных зон. Визуальный стиль, глубокая физика и тактические бои с гигантскими металлическими титанами должны формировать уникальный опыт, которого сегодня не хватает в жанре.
+                <article class="project-card">
+                    <span class="card-id">DOSSIER-02 / SURVIVAL</span>
+                    <h3 class="card-title">Iron Horizon</h3>
+                    <p class="project-status">Статус: ранняя идея игрового цикла</p>
+                    <p class="card-copy">
+                        Survival-концепт о планете-свалке Аэгис-7, где игрок восстанавливает боевого меха,
+                        развивает базу и взаимодействует с ИИ-компаньоном через "Живое Ядро".
+                    </p>
+                    <ul class="tag-list">
+                        <li class="tag">Survival</li>
+                        <li class="tag">Co-op</li>
+                        <li class="tag">Systems</li>
+                    </ul>
+                </article>
 
-Проект задуман как современный гибрид Rust + Titanfall 2 + Fallout 76, но с акцентом на эмоции, атмосферу "мусорного будущего" и долгосрочную привязанность игрока к своему ИИ-ядру.</li>
-                <li><strong>CapyHarmony: Guardians of the Wetlands</strong> — мобильная игра про магических капибар, спасающих мир от экологических катастроф.</li>
-            </ul>
-        </section>
-
-        <section id="education" data-aos="fade-up" data-aos-delay="300">
-            <h2>Образование</h2>
-            <p>Учебное заведение: ГПОАУ АО АПК</p>
-            <p>Специальность: Информационные системы и программирование (ИСиП)</p>
-        </section>
-
-        <section id="first-year-certificates" data-aos="fade-up" data-aos-delay="400">
-            <h2>Грамоты и сертификаты (1 курс)</h2>
-            <div class="certificate-gallery">
-                <img src="img/certificate1.jpg" width="300" height="200" alt="Сертификат 1" />
-                <img src="img/certificate2.jpg" width="300" height="200" alt="Сертификат 2" />
-                <img src="img/certificate3.jpg" width="300" height="200" alt="Сертификат 3" />
+                <article class="project-card">
+                    <span class="card-id">DOSSIER-03 / MOBILE</span>
+                    <h3 class="card-title">CapyHarmony</h3>
+                    <p class="project-status">Статус: концепт персонажей и мобильной механики</p>
+                    <p class="card-copy">
+                        Мобильная игра про магических капибар, которые защищают водно-болотные территории
+                        от экологических катастроф. Проект тренирует работу с персонажами и игровым циклом.
+                    </p>
+                    <ul class="tag-list">
+                        <li class="tag">Mobile</li>
+                        <li class="tag">Characters</li>
+                        <li class="tag">Ecology</li>
+                    </ul>
+                </article>
             </div>
         </section>
 
-        <section id="second-year-certificates" data-aos="fade-up" data-aos-delay="500">
-            <h2>Грамоты и сертификаты (2 курс)</h2>
-            <div class="certificate-gallery">
-                <img src="img/certificate4.jpg" width="300" height="200" alt="Сертификат 4" />
-                <img src="img/certificate5.jpg" width="300" height="200" alt="Сертификат 5" />
-                <img src="img/certificate6.png" width="300" height="200" alt="Сертификат 6" />
+        <section class="section page-shell" id="systems">
+            <div class="section-header">
+                <div>
+                    <p class="section-kicker">Skill modules</p>
+                    <h2 class="section-title">Системы навыков</h2>
+                </div>
+            </div>
+
+            <div class="grid modules-grid">
+                <article class="module-card">
+                    <span class="card-id">MODULE / FRONTEND</span>
+                    <h3 class="card-title">Интерфейсы</h3>
+                    <p class="card-copy">HTML, CSS, адаптивная верстка, базовый JavaScript, структура страницы и оформление портфолио.</p>
+                </article>
+                <article class="module-card">
+                    <span class="card-id">MODULE / PYTHON</span>
+                    <h3 class="card-title">Логика</h3>
+                    <p class="card-copy">Простые Python-скрипты, базовая работа с данными, алгоритмическое мышление и логика Telegram-ботов.</p>
+                </article>
+                <article class="module-card">
+                    <span class="card-id">MODULE / DESIGN</span>
+                    <h3 class="card-title">Визуал</h3>
+                    <p class="card-copy">Adobe Photoshop, баннеры, оформление материалов, подбор визуального настроения и единый стиль проекта.</p>
+                </article>
             </div>
         </section>
 
-        <section id="third-year-certificates" data-aos="fade-up" data-aos-delay="600">
-            <h2>Грамоты и сертификаты (3 курс)</h2>
-            <div class="certificate-gallery">
-                <img src="img/certifacate7.jpg" width="300" height="200" alt="Сертификат 1" />
+        <section class="section page-shell" id="process">
+            <div class="section-header">
+                <div>
+                    <p class="section-kicker">Development pipeline</p>
+                    <h2 class="section-title">Как я работаю</h2>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <article class="timeline-item">
+                    <span class="card-id">01 / Scan</span>
+                    <h3>Собираю идею</h3>
+                    <p>Определяю тему, настроение, аудиторию и главный смысл проекта.</p>
+                </article>
+                <article class="timeline-item">
+                    <span class="card-id">02 / Build</span>
+                    <h3>Делаю структуру</h3>
+                    <p>Разбиваю идею на блоки: интерфейс, механики, контент, визуальные материалы.</p>
+                </article>
+                <article class="timeline-item">
+                    <span class="card-id">03 / Prototype</span>
+                    <h3>Собираю прототип</h3>
+                    <p>Делаю первую рабочую версию: страницу, скрипт, концепт, карточки или демо.</p>
+                </article>
+                <article class="timeline-item">
+                    <span class="card-id">04 / Iterate</span>
+                    <h3>Улучшаю</h3>
+                    <p>Исправляю ошибки, упрощаю текст, довожу визуал и проверяю, понятно ли это другому человеку.</p>
+                </article>
             </div>
         </section>
 
-        <section id="gallery" data-aos="fade-up" data-aos-delay="600">
-            <h2>Галерея</h2>
-            <p>Фотографии меня с группой:</p>
-            <div class="gallery">
-                <img src="img/photo1.jpg" width="300" height="200" alt="Фотография с группой 1" />
-                <p>Фотографии меня с командой на Медиарельности:</p>
-                <img src="img/photo2.webp" width="300" height="200" alt="Фотография c меропрятия 1" />
+        <section class="section page-shell" id="archive">
+            <div class="section-header">
+                <div>
+                    <p class="section-kicker">Certificate archive</p>
+                    <h2 class="section-title">Грамоты и сертификаты</h2>
+                </div>
+                <a class="button button-small" href="#fourth-year-certificates">Сертификаты 4 курса</a>
+            </div>
+            
+            <div class="archive-block">
+                <h3>1 курс</h3>
+                <div class="media-grid">
+                    <figure><img src="img/certificate1.jpg" width="300" height="200" loading="lazy" alt="Сертификат 1 курса"><figcaption>Сертификат 1 курса</figcaption></figure>
+                    <figure><img src="img/certificate2.jpg" width="300" height="200" loading="lazy" alt="Сертификат 1 курса"><figcaption>Сертификат 1 курса</figcaption></figure>
+                    <figure><img src="img/certificate3.jpg" width="300" height="200" loading="lazy" alt="Сертификат 1 курса"><figcaption>Сертификат 1 курса</figcaption></figure>
+                </div>
+            </div>
+
+            <div class="archive-block">
+                <h3>2 курс</h3>
+                <div class="media-grid">
+                    <figure><img src="img/certificate4.jpg" width="300" height="200" loading="lazy" alt="Сертификат 2 курса"><figcaption>Сертификат 2 курса</figcaption></figure>
+                    <figure><img src="img/certificate5.jpg" width="300" height="200" loading="lazy" alt="Сертификат 2 курса"><figcaption>Сертификат 2 курса</figcaption></figure>
+                    <figure><img src="img/certificate6.png" width="300" height="200" loading="lazy" alt="Сертификат 2 курса"><figcaption>Сертификат 2 курса</figcaption></figure>
+                </div>
+            </div>
+
+            <div class="archive-block">
+                <h3>3 курс</h3>
+                <div class="media-grid">
+                    <figure><img src="img/certificate7.jpg" width="300" height="200" loading="lazy" alt="Сертификат 3 курса"><figcaption>Сертификат 3 курса</figcaption></figure>
+                    <figure><img src="img/certificate8.png" width="300" height="200" loading="lazy" alt="Сертификат 3 курса"><figcaption>Сертификат 3 курса</figcaption></figure>
+                    <figure><img src="img/certificate9.jpg" width="300" height="200" loading="lazy" alt="Сертификат 3 курса"><figcaption>Сертификат 3 курса</figcaption></figure>
+                    <figure><img src="img/certificate10.jpg" width="300" height="200" loading="lazy" alt="Сертификат 3 курса"><figcaption>Сертификат 3 курса</figcaption></figure>
+                    <figure><img src="img/certificate11.jpg" width="300" height="200" loading="lazy" alt="Сертификат 3 курса"><figcaption>Сертификат 3 курса</figcaption></figure>
+                    <figure><img src="img/certificate12.jpg" width="300" height="200" loading="lazy" alt="Сертификат 3 курса"><figcaption>Сертификат 3 курса</figcaption></figure>
+                    <figure><img src="img/certificate13.jpg" width="300" height="200" loading="lazy" alt="Сертификат 3 курса"><figcaption>Сертификат 3 курса</figcaption></figure>
+                    <figure><img src="img/certificate14.jpg" width="300" height="200" loading="lazy" alt="Сертификат 3 курса"><figcaption>Сертификат 3 курса</figcaption></figure>
+                </div>
             </div>
         </section>
 
-        <section id="contacts" data-aos="fade-up" data-aos-delay="700">
-            <h2>Контакты</h2>
-            <div class="terminal">
-                <div id="terminalText"></div>
-                <span class="blinking-cursor">_</span>
+        <section class="section page-shell easter-egg" id="fourth-year-certificates">
+            <p class="section-kicker">Unexpected archive record</p>
+            <h2 class="section-title">Сертификаты 4 курса</h2>
+            <p class="easter-copy">Сертификатов нет, есть только Корова-паук. Как Человек-паук, но корова.</p>
+            <img src="img/spider_cow.jpg" width="1200" height="900" loading="lazy" alt="Корова-паук вместо сертификатов 4 курса">
+            <a class="button" href="#archive">Вернуться в архив</a>
+        </section>
+
+        <section class="section page-shell" id="gallery">
+            <div class="section-header">
+                <div>
+                    <p class="section-kicker">Field photos</p>
+                    <h2 class="section-title">Галерея</h2>
+                </div>
+            </div>
+            <div class="media-grid gallery-grid">
+                <figure><img src="img/photo1.jpg" width="300" height="200" loading="lazy" alt="Фотография с группой"><figcaption>Фотография с группой</figcaption></figure>
+                <figure><img src="img/photo2.webp" width="300" height="200" loading="lazy" alt="Фотография с мероприятия Медиареальность"><figcaption>Команда на Медиареальности</figcaption></figure>
+            </div>
+        </section>
+
+        <section class="section page-shell" id="signal-contact">
+            <div class="contact-panel">
+                <p class="section-kicker">Signal channel open</p>
+                <h2 class="section-title">Контакты</h2>
+                <p>Готов к учебным проектам, практике, разработке сайтов, ботов и документации игровых концептов.</p>
+                <div class="contact-links">
+                    <a class="button button-primary" href="mailto:Gyakustsu@yandex.ru">Email</a>
+                    <a class="button" href="https://t.me/MakotoMurasaki" target="_blank" rel="noopener noreferrer">Telegram</a>
+                    <a class="button" href="https://vk.com/matsumotokatsu" target="_blank" rel="noopener noreferrer">VK</a>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Илья Шиятый. Все права защищены.</p>
+    <footer class="site-footer">
+        <div class="page-shell">
+            <p>&copy; 2026 Илья Шиятый. IronShift archive interface / portfolio version 2.</p>
+        </div>
     </footer>
-    <div id="imageModal" class="modal">
-        <img class="modal-content" id="modalImg">
+
+    <div class="image-modal" id="imageModalV2" role="dialog" aria-modal="true" aria-label="Просмотр изображения" aria-hidden="true">
+        <button class="image-modal-close" type="button" aria-label="Закрыть изображение">×</button>
+        <img class="image-modal-content" id="modalImgV2" alt="">
     </div>
-    
-    
-    <button id="scrollTopBtn" title="Наверх">↑</button>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src="main.js"></script>
 </body>
 </html>
